@@ -86,7 +86,7 @@
   .card:nth-child(3n+1){grid-column:span 7}
   .card:nth-child(3n+2){grid-column:span 5;margin-top:80px}
   .card:nth-child(3n){grid-column:3 / span 8}
-  .thumb{aspect-ratio:4/3;border-radius:6px;overflow:hidden;position:relative;background:#151515}
+  .thumb{aspect-ratio:16/9;border-radius:6px;overflow:hidden;position:relative;background:#151515}
   .thumb > *{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
   .card:hover .thumb > *{transform:scale(1.06)}
   .thumb .art{display:grid;place-items:center;font-size:clamp(60px,9vw,150px);font-weight:800;letter-spacing:-.06em;text-transform:uppercase}
@@ -94,7 +94,7 @@
   .card:hover .thumb video{opacity:1}
   .meta{display:flex;justify-content:space-between;align-items:baseline;padding-top:14px;gap:12px}
   .meta h3{font-size:clamp(22px,2.4vw,34px);font-weight:600;letter-spacing:-.03em}
-  .meta .mono{color:var(--mute)}
+  .meta .mono{color:var(--mute);white-space:nowrap}
   .chip{position:absolute;top:16px;left:16px;z-index:2;background:var(--bg);color:var(--acid);padding:6px 10px;border-radius:100px}
 
   /* SERVICES */
@@ -210,14 +210,14 @@
 
 <!-- ============ SHOWREEL ============ -->
 <section id="reel">
-  <div class="head rv"><h2>Reel</h2><span class="mono">Selected cuts / 00:32</span></div>
+  <div class="head rv"><h2>Reel</h2><span class="mono">Selected cuts / 00:42</span></div>
   <!--
     Mini reel dibuat dari karya di Drive. Kalau nanti punya showreel lengkap di YouTube,
     isi data-youtube dengan ID videonya (contoh: dQw4w9WgXcQ) — klik pada reel akan memutar versi YouTube.
   -->
   <div class="reel rv" id="reelBox" data-youtube="">
     <video src="assets/reel.mp4" poster="assets/reel-poster.jpg" autoplay muted loop playsinline preload="metadata"></video>
-    <span class="label mono">● Now playing — 2021–2026</span>
+    <span class="label mono">● Now playing — Selected work</span>
   </div>
 </section>
 
@@ -226,34 +226,34 @@
   <div class="head rv"><h2>Selected<br>Work</h2><span class="mono">(06)</span></div>
   <div class="grid">
     <a class="card rv" href="#">
-      <span class="chip mono">Packaging</span>
-      <div class="thumb"><img src="assets/box.jpg" alt="Lino & Sons cobalt blue jewelry box and card with silver foil logo" loading="lazy" style="object-position:50% 60%"></div>
-      <div class="meta"><div><h3>Lino &amp; Sons — Packaging System</h3><p>Eco-friendly packaging system in signature cobalt and silver foil. Lifted brand engagement by 10%.</p></div><span class="mono">2026</span></div>
+      <span class="chip mono">Launch Film</span>
+      <div class="thumb"><video src="assets/spongebob.mp4" poster="assets/spongebob.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="meta"><div><h3>Geoff Max × SpongeBob SquarePants</h3><p>Launch concept and film for the collab sneaker line: a hand-built Bikini Bottom set, delivered on a tight schedule and limited budget.</p></div><span class="mono">2021</span></div>
     </a>
     <a class="card rv" href="#">
-      <span class="chip mono">Motion</span>
-      <div class="thumb"><video src="assets/feeds.mp4" poster="assets/feeds-poster.jpg" muted loop playsinline preload="none"></video></div>
-      <div class="meta"><div><h3>What's Your Stone?</h3><p>Diamond-shape motion piece for Lino &amp; Sons social.</p></div><span class="mono">2025</span></div>
+      <span class="chip mono">Launch Film</span>
+      <div class="thumb"><video src="assets/alphabet.mp4" poster="assets/alphabet.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="meta"><div><h3>Lino &amp; Sons — Alphabet</h3><p>Playful pop launch for an initial-necklace collection, from pastel set to CCTV-style edits.</p></div><span class="mono">Lino &amp; Sons</span></div>
     </a>
     <a class="card rv" href="#">
-      <span class="chip mono">Key Visual</span>
-      <div class="thumb"><img src="assets/geoff.jpg" alt="Geoff Max sneaker campaign visual — pit crew servicing a giant shoe" loading="lazy"></div>
-      <div class="meta"><div><h3>Geoff Max — Footwear Launches</h3><p>Launch concepts, key visuals and videos for the group's sneaker drops, including the SpongeBob SquarePants collaboration.</p></div><span class="mono">2021</span></div>
+      <span class="chip mono">Motion / Edit</span>
+      <div class="thumb"><video src="assets/timeless.mp4" poster="assets/timeless.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="meta"><div><h3>Geoff Max — Timeless &amp; Meery Checkerboard</h3><p>"They're literally everywhere." A collage-motion story on the checkerboard pattern, ending on the shoe.</p></div><span class="mono">2021</span></div>
     </a>
     <a class="card rv" href="#">
-      <span class="chip mono">Motion / Rebrand</span>
-      <div class="thumb"><video src="assets/rebrand.mp4" poster="assets/rebrand-poster.jpg" muted loop playsinline preload="none"></video></div>
-      <div class="meta"><div><h3>Lino &amp; Sons — Rebrand Teaser</h3><p>"Like every diamond, transformation takes time." Teaser film for the brand's new identity.</p></div><span class="mono">2025</span></div>
+      <span class="chip mono">Launch Film</span>
+      <div class="thumb"><video src="assets/amore.mp4" poster="assets/amore.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="meta"><div><h3>Lino &amp; Sons — Amore</h3><p>Soft, sunlit launch film for a butterfly and flower jewelry line.</p></div><span class="mono">Lino &amp; Sons</span></div>
     </a>
     <a class="card rv" href="#">
-      <span class="chip mono">Motion</span>
-      <div class="thumb"><video src="assets/ponds.mp4" poster="assets/ponds-poster.jpg" muted loop playsinline preload="none"></video></div>
-      <div class="meta"><div><h3>Pond's Men — Launch Teaser</h3><p>Product reveal teaser for a 12.12 launch.</p></div><span class="mono">Video</span></div>
+      <span class="chip mono">Product Motion</span>
+      <div class="thumb"><video src="assets/ponds.mp4" poster="assets/ponds.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="meta"><div><h3>Pond's Men — Sunscreen Gel</h3><p>Product launch video for the brand's first male sunscreen gel: 3D packshots and kinetic type.</p></div><span class="mono">Pond's Men</span></div>
     </a>
     <a class="card rv" href="#">
-      <span class="chip mono">Campaign</span>
-      <div class="thumb"><img src="assets/weddingku.jpg" alt="Lino & Sons Celebrate Your Forever bridal campaign poster" loading="lazy" style="object-position:50% 30%"></div>
-      <div class="meta"><div><h3>Celebrate Your Forever</h3><p>Bridal campaign key visual for Lino &amp; Sons.</p></div><span class="mono">Print</span></div>
+      <span class="chip mono">Brand Film</span>
+      <div class="thumb"><video src="assets/cherish.mp4" poster="assets/cherish.jpg" muted loop playsinline preload="none"></video></div>
+      <div class="meta"><div><h3>Lino &amp; Sons — Cherish Gift Series</h3><p>A mother-and-daughter story film for the gift collection.</p></div><span class="mono">Lino &amp; Sons</span></div>
     </a>
   </div>
 </section>
